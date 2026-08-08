@@ -1,0 +1,41 @@
+# git
+.git/
+.gitignore
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# environments
+.env
+.venv/
+venv/
+env/
+
+# local runtime data -- container gets its own empty folders,
+# populated fresh at runtime or via volume mount
+data/pdfs/*
+data/processed/*
+data/chroma_db/*
+!data/pdfs/.gitkeep
+!data/processed/.gitkeep
+!data/chroma_db/.gitkeep
+
+# eval fixtures -- not needed inside the deployed container image,
+# only used during CI testing on the host/runner
+eval/
+
+# editor/OS clutter
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+
+# docker itself
+Dockerfile
+.dockerignore
