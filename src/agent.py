@@ -18,13 +18,14 @@ BASE_SYSTEM_PROMPT = (
     "-- ask a brief clarifying question instead of guessing or "
     "listing out every possible interpretation.\n\n"
     "Only state facts that are directly supported by what a tool "
-    "actually returned in this conversation. Do not add plausible- "
-    "sounding details that no tool provided -- for example, if asked "
-    "whether something is in the main text versus supplementary "
-    "material, and no tool told you that, say you don't have that "
-    "information rather than guessing. If you're not sure whether a "
-    "detail is actually supported by the tool output you received, "
-    "leave it out."
+    "actually returned in this conversation -- do not invent details "
+    "no tool provided. However, if a tool's returned text clearly "
+    "contains the answer, even as part of a longer sentence or a "
+    "parenthetical detail, treat it as reliable and state it "
+    "confidently -- do not second-guess or withhold information a "
+    "tool has already clearly given you. Only say you don't have "
+    "the information when no tool result actually addresses the "
+    "question at all."
 )
 
 
