@@ -1,0 +1,38 @@
+# git
+.git/
+.gitignore
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# environments
+.env
+.venv/
+venv/
+env/
+
+# runtime data
+data/pdfs/*
+data/processed/*
+data/chroma_db/*
+!data/pdfs/.gitkeep
+!data/processed/.gitkeep
+!data/chroma_db/.gitkeep
+
+# only used in CI
+eval/
+
+# editor/OS
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+
+Dockerfile
+.dockerignore

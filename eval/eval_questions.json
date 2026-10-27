@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "question": "What optimizer was used for training the models?",
+    "expected_tool": "search_text",
+    "expected_answer_contains": ["Adam"]
+  },
+  {
+    "id": 2,
+    "question": "How many tables are there?",
+    "expected_tool": "list_tables",
+    "expected_answer_contains": ["5"]
+  },
+  {
+    "id": 3,
+    "question": "How many figures are there?",
+    "expected_tool": "list_figures",
+    "expected_answer_contains": ["7"]
+  },
+  {
+    "id": 4,
+    "question": "What was the MSE for GATConv in Table 3 on the KIBA cold-target split?",
+    "expected_tool": "ask_about_table",
+    "expected_answer_contains": ["0.5774"]
+  },
+  {
+    "id": 5,
+    "question": "What is the IoU score at the 30% threshold for KIBA in Table 2?",
+    "expected_tool": "ask_about_table",
+    "expected_answer_contains": ["0.0570", "0.057"]
+  },
+  {
+    "id": 6,
+    "question": "What does Figure 1 show?",
+    "expected_tool": "ask_about_figure",
+    "expected_answer_contains": ["framework", "data preparation", "attribution"]
+  },
+  {
+    "id": 7,
+    "question": "Is there a Table 6 in this document?",
+    "expected_tool": "list_tables",
+    "expected_answer_contains": ["no", "5", "does not"]
+  },
+  {
+    "id": 8,
+    "question": "What was the MSE for GINConv on the KIBA random split in Table 5?",
+    "expected_tool": "ask_about_table",
+    "expected_answer_contains": ["0.174"]
+  },
+  {
+    "id": 9,
+    "question": "What learning rate was used for training?",
+    "expected_tool": "search_text",
+    "expected_answer_contains": ["0.0001"]
+  },
+  {
+    "id": 10,
+    "question": "What does Figure 4 show?",
+    "expected_tool": "ask_about_figure",
+    "expected_answer_contains": ["complex", "kinase", "attributed"]
+  },
+  {
+    "id": 11,
+    "question": "What datasets were used in this study?",
+    "expected_tool": "search_text",
+    "expected_answer_contains": ["KIBA", "GLASS"]
+  },
+  {
+    "id": 12,
+    "question": "What was the CI for GINConv on the KIBA random split in Table 3?",
+    "expected_tool": "ask_about_table",
+    "expected_answer_contains": ["0.8730", "0.873"]
+  },
+  {
+    "id": 13,
+    "question": "Which XAI methods were benchmarked in this paper?",
+    "expected_tool": "search_text",
+    "expected_answer_contains": ["Integrated Gradients", "Gradient SHAP", "Guided Backpropagation"]
+  },
+  {
+    "id": 14,
+    "question": "What does Figure 3 show?",
+    "expected_tool": "ask_about_figure",
+    "expected_answer_contains": ["distance", "threshold", "KIBA", "GLASS"]
+  },
+  {
+    "id": 15,
+    "question": "How many data splitting strategies were used?",
+    "expected_tool": "search_text",
+    "expected_answer_contains": ["four", "4", "random", "cold"]
+  },
+  {
+    "id": 16,
+    "question": "What was the RMSE for FiLMConv on KIBA random split in Table 3?",
+    "expected_tool": "ask_about_table",
+    "expected_answer_contains": ["0.4335"]
+  },
+  {
+    "id": 17,
+    "question": "Is there a Figure 8 in this document?",
+    "expected_tool": "list_figures",
+    "expected_answer_contains": ["no", "7", "does not"]
+  },
+  {
+    "id": 18,
+    "question": "What database was used for the KIBA dataset's binding pocket annotations?",
+    "expected_tool": "search_text",
+    "expected_answer_contains": ["KLIFS"]
+  }
+]
